@@ -16,3 +16,10 @@ export function doesNotContainIPL(password) {
     const iplPattern = /ipl/i;
     return !iplPattern.test(password);
 }
+
+export function isPasswordValid(password) {
+    return hasMinimumLength(password) &&
+           hasSpecialCharacter(password) &&
+           hasDigit(password) &&
+           doesNotContainIPL(password);
+}
