@@ -11,3 +11,8 @@ export function hasDigit(password) {
     const digitPattern = /\d/;
     return digitPattern.test(password);
 }
+
+export function doesNotContainIPL(password) {
+    const iplPattern = /ipl/i;
+    return !iplPattern.test(password);
+}

@@ -1,6 +1,7 @@
 import { hasMinimumLength,
-    hasSpecialCharacter,
-    hasDigit } from '../src/passwordChecker.js';
+        hasSpecialCharacter,
+        hasDigit,
+        doesNotContainIPL } from '../src/passwordChecker.js';
 
 describe('hasMinimumLength', () => {
     it('should return true for passwords with at least 8 characters', () => {
@@ -38,4 +39,19 @@ describe('hasDigit', () => {
         expect(hasDigit('Password!')).toBe(false);
     });
 });
+
+
+describe('doesNotContainIPL', () => {
+    it('should return true for passwords that do not contain "IPL"', () => {
+        expect(doesNotContainIPL('Valid123!')).toBe(true);
+        expect(doesNotContainIPL('Password123!')).toBe(true);
+    });
+
+    it('should return false for passwords containing "IPL"', () => {
+        expect(doesNotContainIPL('IPLpassword')).toBe(false);
+        expect(doesNotContainIPL('iplpassword')).toBe(false);
+        expect(doesNotContainIPL('IPLPASSWORD')).toBe(false);
+    });
+});
+
 
