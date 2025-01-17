@@ -8,7 +8,8 @@
 https://github.com/axel-lefranc-vinci/IPL-social.git
 
 ## Description
-Ce projet inclut une fonction de validation de mot de passe développée avec le TDD. Les tests sont exécutés automatiquement via une pipeline CI configurée avec GitHub Actions.
+J'ai testé chaque fonction indivuellement et les tests ont été exécutés avec succès.
+Ensuite j'ai ajouté une fonction de validation de mot de passe et j'ai écrit des tests pour cette fonction.
 
 ## Lancer les tests
 ```bash
