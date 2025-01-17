@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "## Auteur - Nom : Lefranc Axel - Email : axel.lefranc@student.vinci.be",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jasmine"
   },
