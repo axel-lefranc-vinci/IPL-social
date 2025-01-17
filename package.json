@@ -2,22 +2,13 @@
   "name": "exam",
   "version": "1.0.0",
   "description": "## Auteur - Nom : Lefranc Axel - Email : axel.lefranc@student.vinci.be",
-  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "jasmine"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/axel-lefranc-vinci/IPL-social.git"
-  },
   "keywords": [],
   "author": "Lefranc Axel",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/axel-lefranc-vinci/IPL-social/issues"
-  },
-  "homepage": "https://github.com/axel-lefranc-vinci/IPL-social#readme",
   "devDependencies": {
     "jasmine": "^5.5.0"
   }
